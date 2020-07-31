@@ -167,19 +167,11 @@ function internInfo() {
 }
 
 function generateHTML(info, file) {
-  fs.writeFile(info, file, err => {
-    if (err) {
-      throw err;
-    }
-    console.log("Your team is complete!");
-  });
+  if (!fs.existsSync(OUTPUT_DIR)) {
+    fs.mkdirSync(OUTPUT_DIR);
+  }
+  fs.writeFileSync(outputPath, render(allMembers), "utf-8");
+  console.log("Your team is complete!");
 }
-
-// function outputTeam() {
-//   if (!fs.existsSync(OUTPUT_DIR)) {
-//     fs.mkdirSync(OUTPUT_DIR);
-//   }
-//   fs.writeFileSync(outputPath, render(teamMembers), "utf-8");
-// }
 
 newMember();
