@@ -114,7 +114,7 @@ function engineerInfo() {
       },
       {
         type: "input",
-        name: "user",
+        name: "github",
         message: "Enter member's GitHub username",
       },
     ])
@@ -123,7 +123,7 @@ function engineerInfo() {
         answers.name,
         answers.id,
         answers.email,
-        answers.user
+        answers.github
       );
       allMembers.push(engineer);
       newMember();
@@ -166,7 +166,7 @@ function internInfo() {
     });
 }
 
-function generateHTML(info, file) {
+function generateHTML() {
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR);
   }
