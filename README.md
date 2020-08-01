@@ -12,7 +12,7 @@ In this assignment I developed an application to generate a team with each perso
 
 * [Repository](#repository)
 
-* [Demo](#demo)
+* [Example](#example)
 
 ## Installation
 
@@ -33,5 +33,7 @@ node app.js
 ## Repository
 <a href="https://github.com/aimeemillard/team-generator.git">Link to Repo</a>
 
-## Demo
+## Example
 ![alt-text](https://github.com/aimeemillard/team-generator/blob/master/Sample.gif)
+
+![Test Image 1](https://github.com/aimeemillard/team-generator/blob/master/Sample-team.png)
